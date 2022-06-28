@@ -10,12 +10,10 @@
 ### Task1 Answers
 
 1. alert("hello");
-2. <pre>
+2. [The JavaScript Date object helps when working with dates. To create a new object the with current date and time, add the Date variable to your script:]
 
-[The JavaScript Date object helps when working with dates. To create a new object the with current date and time, add the Date variable to your script:]
-
+<pre>
 -----------------
-
 var today = new Date();
 var date = today.getFullYear() + ":" + today.getMonth() + ":" + today.getDate();
 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -33,17 +31,17 @@ console.log(date);
 
 ### Task2 Answers
 
-1. <pre>
+1. Code
+<pre>
     <button>Up</button>
     <button>Down</button>
-
 </pre>
 
-2. <pre>
+2. Code
+<pre>
    <script>
     console.log("Raheem");
    </script>
-
 </pre>
 
 ### Task3
