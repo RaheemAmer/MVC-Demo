@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+</head>
+<body>
+    <button>Press Me</button>
+    <!-- <div>Get groceries</div>
+    <div>Wash car</div>
+    <div>Make dinner</div> -->
+    <script>
+        //Declaring a todos variables with values
+        let toDoList1 = 'Get groceries';
+        let toDoList2 = 'Wash car';
+        let toDoList3 = 'Make dinner';
+
+        //A function to display the todos
+        function addTodo(todoTitle){
+            let element = document.createElement('div');
+            element.innerText = todoTitle;
+            document.body.appendChild(element);
+        }
+
+        //Calling the toDos function
+        addTodo("New Todo");
+        addTodo(toDoList1);
+        addTodo(toDoList2);
+        addTodo(toDoList3);
+
+    </script>
+</body>
+</html>
