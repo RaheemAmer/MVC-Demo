@@ -67,3 +67,4 @@ var date = today.getFullYear() + ":" + today.getMonth() + ":" + today.getDate();
 - Using typeOF get the type of the things that's stored inside of the variable
 - Div renders invisible box around it's content
 - Create functions to reuse pieces of code
+- Important terminologies => [creating a function = defining a function] + []
