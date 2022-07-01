@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
+    <style>
+        *{
+            margin:20px;
+            text-align: center;
+        }
+        .borders{
+            border: 2px solid blue;
+        }
+    </style>
 </head>
 <body>
-    <button>Press Me</button>
+    <button onclick="alert('Danger')">Press Me</button>
+    <div class="borders">
+        <div id="counter">0</div>
+        <button onclick="incrBtn()">Up</button>
+        <button onclick="decBtn()">Down</button>
+    </div>
+
+    <div class="borders">
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="removeTask()">Remove Task</button>
+    <input id="todo-title" type="text"/>
+    </div>
+
+    <div>
+        <button id="todo-button" onclick="changeText()">Click me</button>
+    </div>
+
+    <div>
+        <button onclick="createDiv()">Create Div</button>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>

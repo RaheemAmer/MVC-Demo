@@ -30,3 +30,39 @@ todos.forEach(function (todoTitle) {
 // addTodo(toDoList1);
 // addTodo(toDoList2);
 // addTodo(toDoList3);
+
+
+
+// Set up a <div id="counter">0</div>, a button with the label "Up", and a variable: let count = 0; so that when clicking the button, the number in the div increases by 1. (hint: use count = count + 1;)
+let count = 0;
+function incrBtn() {
+    let button = document.getElementById('counter');
+    button.innerText = count += 1;
+}
+function decBtn() {
+    let button = document.getElementById('counter');
+    button.innerText = count -= 1;
+}
+function addTask() {
+    let textBox = document.getElementById('todo-title');
+    let title = textBox.value;
+    todos.push(title);
+}
+function removeTask() {
+    let textBox = document.getElementById('todo-title');
+    let title = textBox.value;
+    todos.pop(title);
+}
+
+function changeText() {
+    let btn = document.getElementById('todo-button');
+    btn.innerText = "Done";
+}
+
+function createDiv() {
+    let element = document.createElement('div');
+    let textBox = document.getElementById('todo-title');
+    let title = textBox.value;
+    element.innerText = title;
+    document.body.appendChild(element);
+}
