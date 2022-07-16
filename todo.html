@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <title>ToDo</title>
-    <style>
-        *{
-            margin:20px;
-            text-align: center;
-        }
-        .borders{
-            border: 2px solid blue;
-        }
-    </style>
 </head>
+
 <body>
-    <button onclick="alert('Danger')">Press Me</button>
-    <div class="borders">
-        <div id="counter">0</div>
-        <button onclick="incrBtn()">Up</button>
-        <button onclick="decBtn()">Down</button>
-    </div>
+    <div class="container border mt-5 p-4 text-center">
+        <div class="row border-primary">
+            <div class="col-md-12">
+                <h1>ToDo</h1>
+            </div>
+        </div>
+        <button onclick="alert('Danger')">Press Me</button>
+        <div class="borders">
+            <div id="counter">0</div>
+            <button onclick="incrBtn()">Up</button>
+            <button onclick="decBtn()">Down</button>
+        </div>
 
-    <div class="borders">
-    <button onclick="addTask()">Add Task</button>
-    <button onclick="removeTask()">Remove Task</button>
-    <input id="todo-title" type="text"/>
-    </div>
+        <div class="borders">
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="removeTask()">Remove Task</button>
+            <input id="todo-title" type="text" />
+        </div>
 
-    <div>
-        <button id="todo-button" onclick="changeText()">Click me</button>
-    </div>
+        <div>
+            <button id="todo-button" onclick="changeText()">Click me</button>
+        </div>
 
-    <div>
-        <button onclick="createDiv()">Create Div</button>
+        <div>
+            <button onclick="createDiv()">Create Div</button>
+        </div>
+        <div id="todo-list"></div>
+        <div id="cart">
+            <button id="appleBtn" onclick="addToCart()">Apple</button>
+            <button id="tomatoBtn" onclick="addToCart()">Tomato</button>
+            <button id="eggsBtn" onclick="addToCart()">Eggs</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
     </div>
-    <div id="todo-list">
-
-    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
