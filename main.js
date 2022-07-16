@@ -5,11 +5,7 @@
 let todos = ['Get groceries', 'Wash car', 'Make dinner'];
 
 // Loop on array
-todos.forEach(function (todoTitle) {
-    let element = document.createElement('div');
-    element.innerText = todoTitle;
-    document.body.appendChild(element);
-});
+render();
 
 // // Push a new element to the last index of an array
 // todos.push("Get a job");
@@ -47,11 +43,13 @@ function addTask() {
     let textBox = document.getElementById('todo-title');
     let title = textBox.value;
     todos.push(title);
+    render();
 }
 function removeTask() {
     let textBox = document.getElementById('todo-title');
     let title = textBox.value;
     todos.pop(title);
+    render();
 }
 
 function changeText() {
@@ -65,4 +63,15 @@ function createDiv() {
     let title = textBox.value;
     element.innerText = title;
     document.body.appendChild(element);
+}
+
+function render() {
+    // reset our list after updating
+    document.getElementById('todo-list').innerHTML = '';
+    todos.forEach(function (todoTitle) {
+        let element = document.createElement('div');
+        element.innerText = todoTitle;
+        let todoList = document.getElementById('todo-list');
+        todoList.appendChild(element);
+    });
 }
